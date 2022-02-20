@@ -21,6 +21,13 @@ time.sleep(1)
 print("A warm glow of light radiates outwards.")
 time.sleep(1)
 
+do_you_enter = input("\nWould you like to go in?").upper()
+if do_you_enter == "NO" or do_you_enter == "N":
+    print()
+    print("You carry on, wet and cold.")
+elif do_you_enter == "YES" or do_you_enter == "Y":
+    enter_coffeeshop()
+    
 #1st question
 def enter_coffeeshop():
     print()
@@ -30,14 +37,6 @@ def enter_coffeeshop():
     print("\"I'll Be Right With You\"!")
     print()
     print("A short woman weasels through the crowd to greet you,")
-
-
-do_you_enter = input("\nWould you like to go in?").upper()
-if do_you_enter == "NO" or do_you_enter == "N":
-    print()
-    print("You carry on, wet and cold.")
-elif do_you_enter == "YES" or do_you_enter == "Y":
-    enter_coffeeshop()
 
 #For how many
 def follow_me():
